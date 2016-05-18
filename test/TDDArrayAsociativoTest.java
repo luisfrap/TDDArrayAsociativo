@@ -10,7 +10,11 @@ public class TDDArrayAsociativoTest {
 	@Test
 	public void siClaveVaciaValorVacio(){
 		assertEquals("", "");
-		
+	}
+	
+	@Test
+	public void paraClaveDevolverSuValor(){
+		assertEquals("Nombre", "Luis");
 	}
 
 }

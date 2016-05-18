@@ -26,6 +26,9 @@ public class TDDArrayAsociativo {
 	}
 
 	public String get(String clave) {
+		if(clave == null){
+			System.err.println("No se encuentra la clave");
+		}
 		return ("Para la clave "+clave+" el valor es "+ arrayAsociativo.get(clave));
 	}
 
