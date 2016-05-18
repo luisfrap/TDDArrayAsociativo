@@ -8,8 +8,8 @@ public class TDDArrayAsociativoTest {
 	private TDDArrayAsociativo arrayAsociativo = new TDDArrayAsociativo();
 
 	@Test
-	public void crearNuevaEntradaNuevoPar(){
-		
+	public void siClaveVaciaValorVacio(){
+		assertEquals("", "");
 		
 	}
 
