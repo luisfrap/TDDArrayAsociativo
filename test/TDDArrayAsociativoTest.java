@@ -7,31 +7,40 @@ import org.junit.Test;
 
 public class TDDArrayAsociativoTest {
 	private TDDArrayAsociativo tdd;
-	
+
 	@Before
-	public void setUp(){
+	public void setUp() {
 		tdd = new TDDArrayAsociativo();
 	}
-	
+
 	@Test
-	public void parClaveValor(){
+	public void parClaveValor() {
 		tdd.put("Nombre", "Luis");
-		assertEquals("Luis"	, tdd.get("Nombre"));
-		
+		assertEquals("Luis", tdd.get("Nombre"));
+
 	}
-	
+
 	@Test(expected = TDDException.class)
-	public void soloExisteValor(){
+	public void soloExisteValor() {
 		tdd.get("Apellido");
-		
+
 	}
-	
+
 	@Test
-	public void dosValoresConMismaClave(){
+	public void dosValoresConMismaClave() {
 		tdd.put("Nombre", "Luis");
 		assertEquals("Luis", tdd.get("Nombre"));
 		tdd.put("Nombre", "Pedro");
 		assertEquals("Pedro", tdd.get("Nombre"));
+	}
+
+	@Test
+	public void dosValoresDistintosYDosClavesDistintas() {
+		tdd.put("Nombre", "Frodo");
+		assertEquals("Frodo", tdd.get("Nombre"));
+		tdd.put("Apellido", "Bolson");
+		assertEquals("Bolson", tdd.get("Apellido"));
+
 	}
 
 }
