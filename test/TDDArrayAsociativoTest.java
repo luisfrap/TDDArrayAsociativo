@@ -74,5 +74,14 @@ public class TDDArrayAsociativoTest {
 		tdd.put("Apellido", "Tolkien");
 		assertEquals(1, tdd.size());
 	}
+	
+	@Test
+	public void tresElementos(){
+		tdd.put("Nombre", "Frodo");
+		tdd.put("Apellido", "Bolson");
+		tdd.put("Pais", "Hobbiton");
+		assertEquals(3, tdd.size());
+		
+	}
 
 }
