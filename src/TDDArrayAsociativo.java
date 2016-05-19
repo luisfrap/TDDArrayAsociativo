@@ -15,13 +15,13 @@ public class TDDArrayAsociativo {
 	}
 
 	public String get(String clave) {
-		String get ="";
-		if(tabla.containsKey(clave)){
+		String get = "";
+		if (tabla.containsKey(clave)) {
 			get = tabla.get(clave);
-		}else{
+		} else {
 			throw new TDDException(tabla.toString());
 		}
 		return get;
-		
+
 	}
 }

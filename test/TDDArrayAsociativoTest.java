@@ -25,5 +25,13 @@ public class TDDArrayAsociativoTest {
 		tdd.get("Apellido");
 		
 	}
+	
+	@Test
+	public void dosValoresConMismaClave(){
+		tdd.put("Nombre", "Luis");
+		assertEquals("Luis", tdd.get("Nombre"));
+		tdd.put("Nombre", "Pedro");
+		assertEquals("Pedro", tdd.get("Nombre"));
+	}
 
 }
