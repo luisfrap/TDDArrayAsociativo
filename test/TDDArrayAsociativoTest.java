@@ -13,6 +13,11 @@ public class TDDArrayAsociativoTest {
 		tdd = new TDDArrayAsociativo();
 	}
 	
-	
+	@Test
+	public void parClaveValor(){
+		tdd.put("Nombre", "Luis");
+		assertEquals("Luis"	, tdd.get("Nombre"));
+		
+	}
 
 }
