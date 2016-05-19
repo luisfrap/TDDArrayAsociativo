@@ -2,19 +2,17 @@ import static org.junit.Assert.*;
 
 import java.util.LinkedList;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class TDDArrayAsociativoTest {
-	private TDDArrayAsociativo arrayAsociativo = new TDDArrayAsociativo();
-
-	@Test
-	public void siClaveVaciaValorVacio(){
-		assertEquals("", "");
+	private TDDArrayAsociativo tdd;
+	
+	@Before
+	public void setUp(){
+		tdd = new TDDArrayAsociativo();
 	}
 	
-	@Test
-	public void paraClaveDevolverSuValor(){
-		assertEquals("Nombre", "Luis");
-	}
+	
 
 }
