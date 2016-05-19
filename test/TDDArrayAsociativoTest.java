@@ -58,5 +58,15 @@ public class TDDArrayAsociativoTest {
 		tdd.put("Apellido", "El Gris");
 		assertEquals(false, tdd.containsKey("Nombre"));
 	}
+	@Test
+	public void borrarClaveTrue(){
+		tdd.put("Apellido", "King");
+		assertEquals(true, tdd.remove("Apellido"));
+	}
+	
+	public void borrarClaveFalse(){
+		tdd.put("Apellido", "Parker");
+		assertEquals(false, tdd.remove("Nombre");
+	}
 
 }
