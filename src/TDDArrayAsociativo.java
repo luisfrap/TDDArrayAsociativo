@@ -1,5 +1,9 @@
+import static org.junit.Assert.*;
+
 import java.util.Hashtable;
 import java.util.Scanner;
+
+import org.junit.Test;
 
 public class TDDArrayAsociativo {
 
@@ -27,13 +31,18 @@ public class TDDArrayAsociativo {
 
 	public String getOrElse(String clave, String valorDefecto) {
 		// TODO Auto-generated method stub
-		String get="";
-		if(tabla.containsKey(clave)){
+		String get = "";
+		if (tabla.containsKey(clave)) {
 			get = tabla.get(clave);
-		}else{
+		} else {
 			get = tabla.get(valorDefecto);
 		}
 		return get;
-		
 	}
+
+	public boolean containsKey(String clave) {
+		return tabla.containsKey(clave) == true;
+		// TODO Auto-generated method stub
+	}
+
 }

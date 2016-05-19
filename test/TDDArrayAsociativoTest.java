@@ -47,5 +47,12 @@ public class TDDArrayAsociativoTest {
 		tdd.put("Nombre", "Harry");
 		assertEquals("Harry", tdd.getOrElse("Nombre", "-_-"));
 	}
+	
+	@Test
+	public void hayClave(){
+		tdd.put("Nombre", "Gandalf");
+		assertEquals(true, tdd.containsKey("Nombre"));
+		
+	}
 
 }
