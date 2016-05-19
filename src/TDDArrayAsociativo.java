@@ -3,7 +3,7 @@ import static org.junit.Assert.*;
 import java.util.Hashtable;
 import java.util.Scanner;
 
-import org.junit.Test;
+
 
 public class TDDArrayAsociativo {
 
