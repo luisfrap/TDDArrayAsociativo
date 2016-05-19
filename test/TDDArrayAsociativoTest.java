@@ -19,5 +19,11 @@ public class TDDArrayAsociativoTest {
 		assertEquals("Luis"	, tdd.get("Nombre"));
 		
 	}
+	
+	@Test(expected = TDDException.class)
+	public void soloExisteValor(){
+		tdd.get("Apellido");
+		
+	}
 
 }
