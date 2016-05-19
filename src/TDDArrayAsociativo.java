@@ -25,5 +25,15 @@ public class TDDArrayAsociativo {
 
 	}
 
-	
+	public String getOrElse(String clave, String valorDefecto) {
+		// TODO Auto-generated method stub
+		String get="";
+		if(tabla.containsKey(clave)){
+			get = tabla.get(clave);
+		}else{
+			get = tabla.get(valorDefecto);
+		}
+		return get;
+		
+	}
 }

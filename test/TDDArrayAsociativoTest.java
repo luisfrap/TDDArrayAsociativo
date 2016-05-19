@@ -44,8 +44,8 @@ public class TDDArrayAsociativoTest {
 
 	@Test
 	public void siNoExisteValorDefecto() {
-		tdd.put("Juan", "De las Nieves");
-		assertEquals("Juan", tdd.getOrElse("Nombre", "-_-"));
+		tdd.put("Nombre", "Harry");
+		assertEquals("Harry", tdd.getOrElse("Nombre", "-_-"));
 	}
 
 }
