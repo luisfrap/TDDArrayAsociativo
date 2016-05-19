@@ -68,5 +68,11 @@ public class TDDArrayAsociativoTest {
 		tdd.put("Apellido", "Parker");
 		assertEquals(false, tdd.remove("Nombre"));
 	}
+	
+	@Test
+	public void unElemento(){
+		tdd.put("Apellido", "Tolkien");
+		assertEquals(1, tdd.size());
+	}
 
 }
