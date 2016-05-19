@@ -45,4 +45,15 @@ public class TDDArrayAsociativo {
 		// TODO Auto-generated method stub
 	}
 
+	public boolean remove(String clave) {
+		boolean ok = false;
+
+		if (tabla.containsKey(clave)) {
+			tabla.remove(clave);
+			ok = true;
+		}
+		return ok;
+		// TODO Auto-generated method stub
+	}
+
 }

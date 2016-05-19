@@ -66,7 +66,7 @@ public class TDDArrayAsociativoTest {
 	
 	public void borrarClaveFalse(){
 		tdd.put("Apellido", "Parker");
-		assertEquals(false, tdd.remove("Nombre");
+		assertEquals(false, tdd.remove("Nombre"));
 	}
 
 }
